@@ -1,0 +1,232 @@
+.explore-body{
+    background-color: black;
+}
+.categories-bar-wrapper{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.categories-bar-container{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+}
+.categories-bar{
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.categories-bar-content{
+    display: inline-flex;
+    height: 41px;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+}
+.categories-bar-item-wraper{
+    padding-right: 4px;
+}
+.categories-bar-item-container{
+    padding-right: 4px;
+    width: 200px;
+}
+.cat-button{
+    border: none;
+    border-radius: 10px;
+    font-family: "Sailec Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 12px;
+    outline: none;
+    cursor: pointer;
+    transition: all 150ms ease-in, transform 80ms ease-in;
+    color: #FFF;
+    background-color: rgba(61, 61, 73, 0.56);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.categories-bar-item{
+    color: #FFF;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.arrow-box{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    margin-top: 8px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 40px;
+    width: 56px;
+    top: 0;
+    cursor: pointer;
+}
+.arrow-left{
+    left:0;
+    background: linear-gradient(to right, #000 60%, transparent);
+    justify-content: flex-start;
+    z-index: 2;
+}
+.arrow-right{
+    right:0;
+    background: linear-gradient(to left, #000 60%, transparent);
+    justify-content: flex-end;
+}
+.arrow-svg{
+    transition: transform 0.1s ease;
+    display: block;
+}
+.category-title{
+    padding-left: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.photos{
+    transition: width 0.4s ease, left 0.4s ease;
+    width: 100%;
+    float: right;
+    height: 100%;
+    margin-bottom: 200px;
+}
+.lp_fullWidth{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.photoCard {
+    display: inline-block;
+    margin-right: 1%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    position: relative;
+    width: auto;
+    height: 250px;
+}
+.photoCard_caption {
+    overflow: hidden;
+    padding-top: 8px;
+    text-overflow: ellipsis;
+    text-transform: lowercase;
+    white-space: nowrap;
+    width: 100%;
+    color: #87878B; 
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.photoContainer {
+    position: relative;
+  }
+  
+  .actionsBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .actionButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .photoCaption {
+    margin-top: 10px;
+  }
+  .photos-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-card {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 5;
+    min-width: 0;
+    padding:5px;
+    top:0;
+    border-radius: 99px;
+    background-color: rgba(61, 61, 73, 0.56);
+    opacity: 0;
+}
+.user-card-text {
+    font-family: "Poppins", sans-serif;
+    color: #FFF;
+    line-height: 16px;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.photoContainer:hover .actionsBar{
+    transform: translateY(0);
+    opacity: 1;
+  }
+.photoContainer:hover + .user-card,.user-card:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .no-photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; 
+    color: #555;
+}
+
+.no-images-icon {
+    margin-bottom: 20px;
+}
+
+.no-photos-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .6);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .photoCard{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 769px){
+    .photoCard_user {
+        transition: opacity 120ms ease-in-out;
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .actionsBar{
+    transform: translateY(0);
+    opacity: 1;
+  }
+    .user-card{
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+}

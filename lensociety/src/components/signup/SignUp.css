@@ -1,0 +1,182 @@
+.signup-body {
+    height: 90vh;
+}
+.signup-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-left {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+    z-index: 2;
+    background-color: black;
+}
+
+.container-left .overlay:hover {
+    transform: scale(1.06);
+    opacity: 0.3;
+    transition: transform 0.3s ease-in-out;
+}
+.container-left .overlay::after {
+    background-color: black;
+}
+.back-left {
+    background-image: url('/public/img/signup/sign-up-con.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.15;
+    position: absolute;
+    width: 100vw;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.content-wrapper-left {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    z-index: 3;
+}
+
+.content-container-left {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 530px;
+}
+
+.image-css {
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+}
+
+.text-container {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.text-css {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.paragraph-container {
+    margin-bottom: 16px;
+}
+
+.paragraph-left {
+    color: #87878B;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button-sc {
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 12px;
+    outline: none;
+    transition: all 150ms ease-in, transform 80ms ease-in;
+    color: #FFF;
+    background-color: #0091B0;
+    cursor:pointer;
+    pointer-events: all;
+    align-self: center;
+}
+
+.back-right {
+    background-image: url('/public/img/signup/sign-up-buyer.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 641px) {
+    .signup-wrapper {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 0;
+        padding:0;
+        margin: 0;
+    }
+
+    .container-left {
+        flex: 50%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .signup-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        padding: 0;
+        height: 90vh;
+    }
+    .container-left{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        width: 100%;
+    }
+    .content-wrapper-left{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .content-wrapper-left{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

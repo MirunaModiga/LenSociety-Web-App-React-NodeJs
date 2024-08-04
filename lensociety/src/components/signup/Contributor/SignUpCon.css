@@ -1,0 +1,237 @@
+.con-body{
+  height: 100vh;
+    background-color: black;
+}
+.con-wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    height: 100%;
+}
+.con-container{
+    flex: 1 1 auto;
+    width: calc(100% - 64px);
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con-image{
+    background-image: url('https://www.doola.com/wp-content/uploads/2023/06/side-hustles-for-photographers.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    width: 70%;
+    display: flex;
+}
+.div-form{
+    margin-left: 0px;
+    margin-right: 0px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 50%;
+    position: relative;
+}
+.div-box{
+    margin:10%;
+    
+}
+.text-box{
+    padding-top: 5%;
+    padding-bottom: 10%; 
+}
+.button-log{
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  font-family: "Sailec Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 12px;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 150ms ease-in 0s, transform 80ms ease-in 0s;
+  color: rgb(255, 255, 255);
+  background-color: rgba(61, 61, 73, 0.56);
+}
+.heading-con{
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    line-height: 1.25;
+    text-align: center;
+}
+.input-container{
+    position: relative;
+    padding-bottom: 8px;
+    width: 100%;
+}
+.div-label{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.s-form-container {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .s-form-container button:active {
+    scale: 0.95;
+  }
+  
+  .s-form-container .s-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .s-form-container .s-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .s-form-container .s-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .s-form-container .s-form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .s-form-container .s-form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .s-form-container .s-form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .s-form-container .s-form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .s-form-container .s-form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .s-form-container .s-form-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 50%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .s-form-container .s-form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+@media screen and (min-width: 641px){
+    .div-form {
+        flex: 0 0 auto;
+    }
+    .heading-con{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 790px){
+  .con-image{
+    display: none;
+  }
+  .div-form{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 832px){
+    .div-form {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width: 640px){
+    .div-form {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

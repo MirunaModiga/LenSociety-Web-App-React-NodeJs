@@ -1,0 +1,363 @@
+.admin-container {
+	display: flex;
+	height: 100vh;
+  overflow-y: scroll;
+  }
+  
+  .sidebar {
+	width: 250px;
+	background-color: #2c3e50;
+	color: #fff;
+  position: sticky;
+  top:0;
+min-height: 100vh;
+  }
+  
+  .sidebar ul {
+	list-style-type: none;
+	padding: 0;
+  margin-bottom: 20px;
+  }
+  
+  .sidebar li {
+	padding: 10px 0;
+  }
+  
+  .sidebar li button {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .sidebar li button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar .active button {
+	background-color: #0091b0;
+  }
+  
+  .content {
+	flex-grow: 1;
+  position: relative;
+	padding: 20px;
+  }
+  
+  .admin-container table {
+	  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+  .admin-container table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  .admin-container table th,
+  .admin-container table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+  text-align: center;
+  }
+  
+  .admin-container table th {
+	background-color: #f2f2f2;
+	color: #333;
+  }
+  
+  .admin-container table tbody tr:hover {
+	background-color: #f9f9f9;
+  }
+  
+  .btn-logout {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 45px;
+	height: 45px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition-duration: .3s;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+	background-color: #b517ed;
+  }
+  .btn-logout-div {
+	padding-left: 6%;
+}
+
+  .admin-sign {
+	width: 100%;
+	transition-duration: .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .admin-sign svg {
+	width: 17px;
+  }
+  
+  .admin-sign svg path {
+	fill: white;
+  }
+  .text {
+	position: absolute;
+	right: 0%;
+	width: 0%;
+	opacity: 0;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	transition-duration: .3s;
+  }
+  .btn-logout:hover {
+	width: 125px;
+	border-radius: 40px;
+	transition-duration: .3s;
+  }
+  
+  .btn-logout:hover .admin-sign {
+	width: 30%;
+	transition-duration: .3s;
+	padding-left: 20px;
+  }
+  .btn-logout:hover .text {
+	opacity: 1;
+	width: 70%;
+	transition-duration: .3s;
+	padding-right: 10px;
+  }
+  .btn-logout:active {
+	transform: translate(2px ,2px);
+  }
+.request-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.request-status.confirmed {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.request-status.awaiting {
+    background-color: #f1c40f;
+    color: #ffffff;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+	justify-content: center;
+}
+
+.action-button {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button.edit {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.action-button.delete {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.action-button:hover {
+    filter: brightness(1.2);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #0091b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal .close-btn-modal{
+	background-color:darkgray;
+}
+
+.modal .close-btn-modal:hover{
+	background-color:#333;
+}
+
+.modal-buttons{
+	display: flex;
+	gap: 10px;
+}
+
+.modal button:hover {
+    background-color: #007388;
+}
+
+.modal button:active {
+    transform: translate(2px, 2px);
+}
+.modal select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f1f1f1; 
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; 
+}
+.title-admin {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.chart-css{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .chart-css {
+    margin-right: 5px;
+  }
+  .title-admin{
+    font-size: 1.5em;
+  }
+}
+
+.responsive-container{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1270px) {
+  .chart-css {
+    margin-right: 0;
+  }
+  .responsive-container {
+    flex-direction: column;
+  }
+}
+
+.modal select:focus {
+    border-color: #007388;
+}
+@media only screen and (max-width: 1270px) {
+  .admin-container {
+    flex-direction: column;
+    height: auto;
+}
+
+.sidebar {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  order: 2;
+  padding: 20px;
+  overflow-x: auto; 
+}
+
+.admin-container table {
+  border: 0;
+}
+
+.admin-container table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.admin-container table tr {
+  border-bottom: 3px solid #ddd;
+  display: block;
+  margin-bottom: .625em;
+}
+
+.admin-container table td {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: .8em;
+  text-align: right;
+  min-height: 50px;
+
+}
+
+.admin-container table td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admin-container table td:last-child {
+  border-bottom: 0;
+}
+
+}

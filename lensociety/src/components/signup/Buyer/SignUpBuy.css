@@ -1,0 +1,18 @@
+.con-image-buy{
+    background-image: url('https://www.eyeem.com/node-static/img/signup/buyer.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    width: 70%;
+    display: flex;
+}
+
+
+@media screen and (max-width: 790px){
+    .con-image-buy{
+      display: none;
+    }
+    .div-form{
+      width: 100%;
+    }
+  }

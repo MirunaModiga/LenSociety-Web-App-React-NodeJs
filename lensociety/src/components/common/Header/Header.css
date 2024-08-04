@@ -1,0 +1,27 @@
+.sign-btn{
+    padding: .6rem 1.5rem;
+    background: rgb(115,38,150);
+    background: linear-gradient(90deg, rgba(115,38,150,1) 0%, rgba(94,185,219,1) 100%);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 42px;
+    white-space: nowrap;
+}
+.sign{
+    display:inline-flex;
+    justify-content: center;
+    height: 42px;
+}
+.sign-wrapper{
+    height: 42px;
+    width: 150px;
+    justify-content: center;
+    display: flex;
+}
+.icon{
+    margin-top: 1%;
+    margin-right: 5%;
+    left: 0;
+}

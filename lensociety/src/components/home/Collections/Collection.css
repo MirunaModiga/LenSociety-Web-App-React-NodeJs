@@ -1,0 +1,63 @@
+.collection .box {
+  position: relative;
+  border-radius: 5px;
+}
+.box img{
+  transition: all 0.3s;
+  display: block;
+  transform: scale(1);
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box:hover .overlay::after {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.collection img {
+  border-radius: 5px;
+}
+.collection .overlay {
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 222;
+}
+.collection .overlay::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: rgb(15 28 47 / 30%);
+  z-index: -1;
+  margin: 5% 5% 5% 5%;
+  border-radius: 5px;
+}
+.collection h5 {
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .collection h5 {
+    font-size: 16px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .collection h5 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .collection .overlay::after {
+    width: 90%;
+    height: 90%;
+  }
+}

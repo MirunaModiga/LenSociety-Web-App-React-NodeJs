@@ -1,0 +1,147 @@
+.join-body{
+    z-index: 2;
+    background-image: linear-gradient(#000, rgba(0, 0, 0, .32) 0%, transparent);
+    position: relative;
+    height: 90vh;
+}
+.div-wrapper{
+    height:90vh;
+    background-image: linear-gradient(transparent 50%, #000), linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25));
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.div-wrapper.background{
+    background-image: linear-gradient(transparent 4%, #000), url('/public/img/ph.jpg');
+    background-position: 0 0, 0 0;
+    background-size: auto, cover;
+}
+.join-container{
+    width: 96vw;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.j-text{
+    padding: 2px;
+    width: 90vw;
+}
+.text-heading{
+    color: white;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 56px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.j-paragraph-centered{
+    width: 100%;
+    color: rgba(255, 255, 255, .6);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    display: block;
+}
+
+.button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color:white ;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px blueviolet;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}

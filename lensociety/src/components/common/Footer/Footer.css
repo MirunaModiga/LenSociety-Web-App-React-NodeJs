@@ -1,0 +1,126 @@
+.footer-wrapper{
+    padding: 32px 16px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    height: fit-content;
+    flex-shrink: 0;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+.footer-container{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.footer-left{
+    word-break: break-word;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-right{
+    word-break: break-word;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 64px;
+}
+.footer-text h1{
+    width: 80%;
+    color: rgb(182, 156, 240);
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.link a,p{
+    position: relative;
+    text-decoration:none;
+    color: white;
+    transition: color 0.1s ease 0s;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-left: 8px;
+    font-size: 16px;
+}
+.links-left{
+    word-break: break-word;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+.links-right{
+    word-break: break-word;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+.link{
+    word-break: break-word;
+    max-width: 100%;
+    display: flex;
+}
+.copyright{
+    color: #72809d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin-bottom: auto;
+}
+.copyright p{
+    padding-left: 1rem;
+    color:#72809d;
+}
+.link-h:hover{
+    color:rgb(41, 134, 247);
+}
+.i-link{
+    color: #009688;
+    margin: 10px;
+    transition: .5s linear;
+}
+.r-link{
+    color:azure;
+}
+.links-left a{
+   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-left,
+    .footer-right {
+        width: 100%; 
+    }
+    .logo{
+        width: 50%;
+    }
+}
+@media screen  and (max-width: 340px){
+    .footer-container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .footer-text h1{
+        font-size: 16px;
+    }
+    .link a,p{
+        font-size: 14px;
+    }
+    .footer-wrapper{
+        padding: 16px 8px;
+    }
+    .logo{
+        width: 50%;
+    }
+}
